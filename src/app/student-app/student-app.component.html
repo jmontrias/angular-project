@@ -1,0 +1,92 @@
+<h1>ABC University Student List</h1>
+
+<div class="form">
+    <div class="form-header">
+        <h2>Add New Student</h2>
+    </div>
+    <div class="form-group">
+        <label>Name:</label>
+        <input [(ngModel)]="name" />
+    </div>
+<br>
+    <div class="form-group">
+        <label>Gender:</label>
+        <input [(ngModel)]="gender" />
+    </div>
+<br>
+    <div class="form-group">
+        <label>Course:</label>
+        <input [(ngModel)]="course" />
+    </div>
+<br>
+    <div class="form-group">
+        <label>Year:</label>
+        <input [(ngModel)]="year" />
+    </div>
+<br>
+    <div class="form-group">
+        <button (click)="addStudent(name, gender, course, year)">Add Student</button>
+    </div>
+</div>
+
+<!-- <div class="form">
+    <div class="form-toggle"></div>
+    <div class="form-panel one">
+      <div class="form-header">
+        <h1>ABC University Student List</h1>
+      </div>
+      <div class="form-content">
+        <form>
+          <div class="form-group">
+            <label>Name</label>
+            <input [(ngModel)]="name" />
+          </div>
+          <div class="form-group">
+            <label>Gender</label>
+            <input [(ngModel)]="gender" />
+          </div>
+          <div class="form-group">
+            <label>Course</label>
+            <input [(ngModel)]="course" />
+          </div>
+          <div class="form-group">
+            <label>Year</label>
+            <input [(ngModel)]="year" />
+          </div>
+          <div class="form-group">
+            <button (click)="addStudent(name, gender, course, year)">Add Student</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div> -->
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>GENDER</th>
+            <th>COURSE</th>
+            <th>YEAR</th>
+            <th>action</th>
+            <th>action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students; let i = index;">
+            <!-- <app-student [student]="student"></app-student> -->
+            <td [ngStyle]="{'background-color': student.bgcolor}">{{ student.name }}</td>
+            <td [ngStyle]="{'background-color': student.bgcolor}">{{ student.gender }}</td>
+            <td [ngStyle]="{'background-color': student.bgcolor}">{{ student.course }}</td>
+            <td [ngStyle]="{'background-color': student.bgcolor}">{{ student.year }}</td>
+            <td [ngStyle]="{'background-color': student.bgcolor}">
+                <button class="button" (click)="updateStudent(i, name, gender, course, year)">Update</button>
+            </td>
+            <td [ngStyle]="{'background-color': student.bgcolor}">
+                <button class="button" (click)="deleteStudent(i)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

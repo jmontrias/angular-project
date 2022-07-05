@@ -1,0 +1,36 @@
+<!-- <div>
+    <h3>Login to Enter</h3>
+    <label>Username:</label><input [(ngModel)] = "username"/>
+    <br>
+    <label>Password:</label><input type="password" [(ngModel)] = "password"/>
+    <br>
+    <button (click)="validateLogin(username,password)">Login</button>
+</div> -->
+<div class="form">
+    <!-- <div class="form-toggle"></div> -->
+    <div class="form-panel one">
+      <div class="form-header">
+        <h1>ABC University Account Login</h1>
+      </div>
+      <div class="form-content">
+        <form>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input id="username" type="text" name="username" required="required" [(ngModel)] = "username" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" required="required" [(ngModel)] = "password" />
+          </div>
+          <div class="form-group">
+            <label class="form-remember">
+              <input type="checkbox"/>Remember Me
+            </label><a class="form-recovery" href="/login">Forgot Password?</a>
+          </div>
+          <div class="form-group">
+            <button type="submit" (click)="validateLogin(username,password)">Log In</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
