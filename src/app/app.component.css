@@ -8,19 +8,4 @@ body {
     line-height: 1.6em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    margin-trim: all;
-}
-
-app-navigation {
-  margin: 0;
-  padding: 0;
-}
-
-router-outlet {
-  margin: 0;
-  padding: 0;
 }
