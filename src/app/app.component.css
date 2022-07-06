@@ -1,3 +1,5 @@
+  
+
 body {
     background: linear-gradient(45deg, rgba(66, 183, 245, 0.8) 0%, rgba(66, 245, 189, 0.4) 100%);
     color: rgba(0, 0, 0, 0.6);
@@ -6,4 +8,19 @@ body {
     line-height: 1.6em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    margin-trim: all;
+}
+
+app-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+router-outlet {
+  margin: 0;
+  padding: 0;
+}

@@ -1,32 +1,31 @@
 <h1>ABC University Student List</h1>
-
 <div class="form">
-    <div class="form-header">
-        <h2>Add New Student</h2>
-    </div>
-    <div class="form-group">
-        <label>Name:</label>
-        <input [(ngModel)]="name" />
-    </div>
-<br>
-    <div class="form-group">
-        <label>Gender:</label>
-        <input [(ngModel)]="gender" />
-    </div>
-<br>
-    <div class="form-group">
-        <label>Course:</label>
-        <input [(ngModel)]="course" />
-    </div>
-<br>
-    <div class="form-group">
-        <label>Year:</label>
-        <input [(ngModel)]="year" />
-    </div>
-<br>
-    <div class="form-group">
-        <button (click)="addStudent(name, gender, course, year)">Add Student</button>
-    </div>
+      <div class="form-header">
+          <h2>Add New Student</h2>
+      </div>
+      <div class="form-group">
+          <label>Name:</label>
+          <input [(ngModel)]="name" />
+      </div>
+  <br>
+      <div class="form-group">
+          <label>Gender:</label>
+          <input [(ngModel)]="gender" />
+      </div>
+  <br>
+      <div class="form-group">
+          <label>Course:</label>
+          <input [(ngModel)]="course" />
+      </div>
+  <br>
+      <div class="form-group">
+          <label>Year:</label>
+          <input [(ngModel)]="year" />
+      </div>
+  <br>
+      <div class="form-group">
+          <button (click)="addStudent(name, gender, course, year)">Add Student</button>
+      </div>
 </div>
 
 <!-- <div class="form">
@@ -90,3 +89,6 @@
         </tr>
     </tbody>
 </table>
+<div class="pen-footer">
+  <p>&copy; Jona 2022</p>
+</div>
